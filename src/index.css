@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+body {
+  overflow-x: hidden;
+}
+
+/* @font-face {
+    font-family: 'Quickland';
+    src: url('./assets/Quickland.woff2') format('woff2'),
+         url('./assets/Quickland.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+    */
+
+.slide-container {
+  width: 80%;
+  margin: auto;
+}
+
+/* .each-fade > div {
+  width: 75%;
+} */
+/* .each-fade {
+  height: 82%;
+} */
+
+.each-fade > div img {
+  /* width: 100%;
+  height: 100%; */
+  /* object-fit: cover; */
+}
+.prose h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.prose h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.prose h3 {
+  font-size: 1.55rem;
+  font-weight: bold;
+}
+
+.prose h4 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.prose p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.prose p.ql-align-center {
+  text-align: center;
+}
+
+.prose ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.prose ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+}
+
+.prose a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.prose strong {
+  font-weight: bold;
+}
+
+.prose em {
+  font-style: italic;
+}
+
+.prose u {
+  text-decoration: underline;
+}
+
+.quill .ql-container {
+  height: 300px !important;
+  overflow-y: auto !important;
+}
+
+.quill .ql-editor {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+/* width of the scrollbar */
+::-webkit-scrollbar {
+  width: 14px;
+  transition: all 0.3s ease;
+}
+
+/* Track (background) of the scrollbar */
+::-webkit-scrollbar-track {
+  background: linear-gradient(to right, #FFE5E5, #FFF0F0);
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Handle (the draggable part) of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #E74646, #dc2626, #ef4444, #E74646);
+  background-size: 200% 200%;
+  border-radius: 10px;
+  border: 3px solid #FFE5E5;
+  box-shadow: 0 2px 6px rgba(231, 70, 70, 0.2);
+  transition: all 0.3s ease;
+  animation: gradient 3s ease infinite;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #dc2626, #ef4444, #E74646, #dc2626);
+  background-size: 200% 200%;
+  border: 3px solid #FFE8E8;
+  box-shadow: 0 4px 8px rgba(231, 70, 70, 0.3);
+  cursor: pointer;
+}
+
+/* Handle on active/clicking */
+::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(45deg, #b91c1c, #dc2626, #ef4444, #b91c1c);
+  transform: scale(0.98);
+}
+
+/* Corner where vertical and horizontal scrollbars meet */
+::-webkit-scrollbar-corner {
+  background: #FFE5E5;
+  border-radius: 10px;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #E74646 #FFE5E5;
+}
+
+/* Animation keyframes for the gradient */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Smooth scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
+}
